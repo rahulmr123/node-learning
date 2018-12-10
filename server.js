@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/bad', (req, res) => {
-  res.sendFile('./help.html', {root: __dirname});
+  res.sendFile('playground/help.html', {root: __dirname});
 })
 
 app.listen(port, ()=> {
